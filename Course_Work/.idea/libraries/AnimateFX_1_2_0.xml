@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="AnimateFX-1.2.0">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../Java Stuf/AnimateFX-1.2.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../Java Stuf/jfoenix-9.0.10.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

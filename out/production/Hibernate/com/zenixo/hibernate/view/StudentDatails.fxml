@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="Root" prefHeight="421.0" prefWidth="676.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.zenixo.hibernate.controller.StudentDatailsController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="72.0" stroke="WHITE" strokeType="INSIDE" width="676.0">
+         <fill>
+            <LinearGradient endX="0.030534329305168334" endY="0.8435114585716306">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.11001461744308472" green="0.4737963080406189" blue="0.7921052575111389" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <ImageView fitHeight="50.0" fitWidth="90.0" layoutX="47.0" layoutY="11.0" onMouseClicked="#btnBackToHome" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../assects/home-icon.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <Label layoutX="243.0" layoutY="16.0" prefHeight="40.0" prefWidth="235.0" text="Student Datails">
+         <font>
+            <Font name="System Bold" size="28.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="cmbStudentID" layoutX="253.0" layoutY="86.0" onAction="#btncmbStudentID" prefHeight="26.0" prefWidth="169.0" promptText="Student ID :" />
+      <TableView fx:id="tblStudentDatails" layoutX="-2.0" layoutY="176.0" onSort="#tblStudentDatails" prefHeight="248.0" prefWidth="676.0">
+        <columns>
+          <TableColumn fx:id="colStudentID" prefWidth="254.4000244140625" text="Student ID" />
+          <TableColumn fx:id="colStudentName" prefWidth="202.39996337890625" text="Course ID" />
+            <TableColumn fx:id="colCourseID" prefWidth="218.4000244140625" text="Student Name" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

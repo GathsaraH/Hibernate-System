@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="txtRoot" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.zenixo.hibernate.controller.MainForumController">
+   <children>
+      <ImageView fitHeight="192.0" fitWidth="237.0" layoutX="271.0" layoutY="-58.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../assects/logo2.gif" />
+         </image>
+      </ImageView>
+      <Separator layoutX="13.0" layoutY="129.0" prefHeight="10.0" prefWidth="708.0" />
+      <Label layoutX="235.0" layoutY="83.0" text="Best Way to Lern Java - Royal Institute" textFill="#d70b0b">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="330.0" layoutY="303.0" text="Welcome" textAlignment="CENTER" textFill="#1499d9">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="206.0" layoutY="328.0" prefHeight="21.0" prefWidth="367.0" text="Please select one of above main operations to proceed" textAlignment="CENTER">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="271.0" layoutY="349.0" text="Copyright 2020 Zenixo_Software - Gathsara">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="75.0" fitWidth="88.0" layoutX="330.0" layoutY="163.0" onMouseClicked="#addCourse" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../assects/addCourse.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fitHeight="68.0" fitWidth="75.0" layoutX="126.0" layoutY="166.0" onMouseClicked="#addStudent" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../assects/addStudent.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fitHeight="75.0" fitWidth="81.0" layoutX="524.0" layoutY="163.0" onDragDetected="#studentDetails" onMouseClicked="#studentDetails" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../assects/report.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <Label layoutX="105.0" layoutY="238.0" text="Manage Registration">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="325.0" layoutY="238.0" text="Manage Course">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="521.0" layoutY="238.0" text="Student Details">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

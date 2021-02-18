@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="444.0" prefWidth="399.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.zenixo.hibernate.controller.LoginForumController">
+   <children>
+      <ImageView fitHeight="206.0" fitWidth="316.0" layoutX="115.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../assects/logo2.gif" />
+         </image>
+      </ImageView>
+      <Label layoutX="154.0" layoutY="188.0" prefHeight="32.0" prefWidth="111.0" text="User Name :" textFill="#30336b">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="154.0" layoutY="259.0" prefHeight="32.0" prefWidth="90.0" text="PassCode  :" textFill="#30336b">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtUserName" layoutX="117.0" layoutY="220.0" prefHeight="26.0" prefWidth="162.0" promptText="User Name.." />
+      <TextField fx:id="txtShowedPassword" layoutX="119.0" layoutY="291.0" onKeyReleased="#txtShowedPasswordOnKeyReleased" prefHeight="26.0" prefWidth="161.0" promptText="PassCode.." visible="false" />
+      <Button layoutX="125.0" layoutY="373.0" mnemonicParsing="false" onAction="#btnLogin" prefHeight="26.0" prefWidth="146.0" style="-fx-background-radius: 30; -fx-background-color: #16a085;" text="Login" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <PasswordField fx:id="pwd" layoutX="119.0" layoutY="291.0" onKeyReleased="#pwdOnKeyReleased" prefHeight="26.0" prefWidth="161.0" promptText="Password" />
+      <RadioButton fx:id="rdShowPassword" layoutX="119.0" layoutY="336.0" mnemonicParsing="false" onAction="#rdShowPasswordOnAction" text="Show Password" />
+   </children>
+</AnchorPane>

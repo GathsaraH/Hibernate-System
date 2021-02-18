@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="Root" prefHeight="669.0" prefWidth="930.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.zenixo.hibernate.controller.RegistrationFormController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="123.0" stroke="WHITE" strokeType="INSIDE" width="654.0">
+         <fill>
+            <LinearGradient endX="0.10687022536765527" endY="0.557251907486952" startX="0.026717554521924668">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color green="0.49627193808555603" blue="0.9605262875556946" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <ImageView fitHeight="56.0" fitWidth="67.0" layoutX="54.0" layoutY="13.0" onMouseClicked="#btnBackToHome" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../assects/home-icon.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <Label layoutX="125.0" layoutY="21.0" text="Student Registration">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <Button layoutX="696.0" layoutY="30.0" mnemonicParsing="false" onAction="#btnRegistration" prefHeight="39.0" prefWidth="154.0" style="-fx-background-color: #e1b12c;" text="+Registration" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="498.0" layoutY="30.0" mnemonicParsing="false" onAction="#btnRe_Registration" prefHeight="39.0" prefWidth="154.0" style="-fx-background-color: #0097e6;" text="+Re-Registration" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <TextField fx:id="txtRegistrationID" layoutX="47.0" layoutY="127.0" prefHeight="26.0" prefWidth="194.0" promptText="Registration ID  :" />
+      <TextField fx:id="txtStudentID" layoutX="47.0" layoutY="178.0" prefHeight="26.0" prefWidth="194.0" promptText="Student ID :" />
+      <TextField fx:id="txtStudentName" layoutX="47.0" layoutY="223.0" prefHeight="26.0" prefWidth="194.0" promptText="Student Name :" />
+      <TextField fx:id="txtAddress" layoutX="47.0" layoutY="278.0" prefHeight="26.0" prefWidth="194.0" promptText="Address :" />
+      <TextField fx:id="txtContact" layoutX="261.0" layoutY="278.0" prefHeight="26.0" prefWidth="194.0" promptText="Contact :" />
+      <ComboBox fx:id="cmbGender" layoutX="261.0" layoutY="127.0" prefHeight="26.0" prefWidth="194.0" promptText="Gender :" />
+      <DatePicker fx:id="txtRegDate" layoutX="261.0" layoutY="178.0" prefHeight="26.0" prefWidth="194.0" promptText="Registration Date :" />
+      <TextField fx:id="txtCourseID" layoutX="260.0" layoutY="223.0" prefHeight="26.0" prefWidth="194.0" promptText="Course ID :" />
+      <TableView fx:id="tblCourseTable" layoutX="475.0" layoutY="127.0" onMouseClicked="#tblCourseMouseClick" prefHeight="206.0" prefWidth="438.0">
+        <columns>
+          <TableColumn fx:id="colCourseID" prefWidth="82.4000244140625" text="Course ID" />
+          <TableColumn fx:id="colCourseName" prefWidth="136.79998779296875" text="Course Name" />
+            <TableColumn fx:id="colCourseFee" prefWidth="100.79998779296875" text="Course Fee" />
+            <TableColumn fx:id="colCourseDuration" prefWidth="115.9998779296875" text="Course Duration" />
+        </columns>
+      </TableView>
+      <ComboBox fx:id="cmbStudentID" layoutX="596.0" layoutY="347.0" onAction="#btncmbStudentID" prefHeight="26.0" prefWidth="176.0" promptText="Student ID :" />
+      <Button fx:id="txtbtnAdd" layoutX="684.0" layoutY="456.0" mnemonicParsing="false" onAction="#btnAdd" prefHeight="26.0" prefWidth="136.0" style="-fx-background-color: #2f3542;" text="Add" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Button fx:id="txtbtnDelete" layoutX="684.0" layoutY="508.0" mnemonicParsing="false" onAction="#btnDelete" prefHeight="26.0" prefWidth="136.0" style="-fx-background-color: #1e90ff;" text="Delete" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Button fx:id="txtbtnUpdate" layoutX="684.0" layoutY="558.0" mnemonicParsing="false" onAction="#btnUpdate" prefHeight="26.0" prefWidth="136.0" style="-fx-background-color: #2ed573;" text="Update" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <TableView fx:id="tblStudentDtails" layoutX="20.0" layoutY="418.0" onMouseClicked="#tblMouseClickStudent" prefHeight="206.0" prefWidth="597.0">
+         <columns>
+            <TableColumn fx:id="colSregID" prefWidth="141.6000099182129" text="Reg ID" />
+            <TableColumn fx:id="colSstudentID" prefWidth="151.19996643066406" text="Student ID" />
+            <TableColumn fx:id="colScourseID" prefWidth="108.79998779296875" text="Course ID" />
+            <TableColumn fx:id="colSregFee" prefWidth="195.99993896484375" text="Reg Fee" />
+         </columns>
+      </TableView>
+      <TextField fx:id="txtRegistrationFee" layoutX="260.0" layoutY="334.0" prefHeight="26.0" prefWidth="194.0" promptText="Registration Fee :" />
+      <TextField fx:id="txtSecondBday" layoutX="47.0" layoutY="334.0" prefHeight="26.0" prefWidth="194.0" promptText="B/Day :" />
+      <Button fx:id="txtbtnAddTwo" layoutX="684.0" layoutY="456.0" mnemonicParsing="false" onAction="#btnAddTwo" prefHeight="26.0" prefWidth="136.0" style="-fx-background-color: #7d5fff;" text="Add" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
